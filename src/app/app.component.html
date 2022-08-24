@@ -1,37 +1,37 @@
 <div class="fondo">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
-        <span>
-          <button class="1" mat-button color="basic">Ezequiel Barragan</button>
-        </span>
-      </div>
-      <div class="col-md-1">
-        <button (click)="scrollUno()"class="1" mat-button color="basic">About me</button>
-      </div>
-      <div class="col-md-1">
-        <button (click)="scrollDos()" class="1" mat-button color="basic">Skill</button>
-      </div>
-      <div class="col-md-1">
-        <button class="1" mat-button color="basic">Education</button>
-      </div>
-      <div class="col-md-1">
-        <button (click)="scrollTres()"class="1" mat-button color="basic">Experience</button>
-      </div>
-      <div class="col-md-1">
-        <button class="1" mat-button color="basic">Contact</button>
-      </div>
+      <mat-toolbar>
+        <div class="col-md-6">
+        <button class="1" mat-button color="basic">Ezequiel Barragan</button>
+        </div>
+        <div class="col-md-1">
+          <button (click)="scrollUno()"class="1" mat-button color="basic">About me</button>
+        </div>
+        <div class="col-md-1">
+          <button (click)="scrollDos()" class="1" mat-button color="basic">Skill</button>
+        </div>
+        <div class="col-md-1">
+          <button (click)="scrollCuatro()" class="1" mat-button color="basic">Education</button>
+        </div>
+        <div class="col-md-1">
+          <button (click)="scrollTres()"class="1" mat-button color="basic">Experience</button>
+        </div>
+        <div class="col-md-1">
+          <button class="1" mat-button color="basic">Contact</button>
+        </div>
+      </mat-toolbar>
     </div>
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-5">
 
       </div>
       <div class="col-md-2">
         <img id="ima"src="https://www.magisnet.com/wp-content/uploads/2021/01/programacio%CC%81n.jpg">
       </div>
-      <div class="col-md-2">
+      <div class="col-md-3">
 
       </div>
       <div class="col-md-1">
@@ -44,13 +44,13 @@
       <div class="col-md-5">
 
       </div>
-      <div class="col-md-4">
-        Ezequiel Barragan
-      </div>
-      <div class="col-md-2">
-
+      <div class="col-md-3">
+        <strong><em>Ezequiel Barragan</em></strong>
       </div>
       <div class="col-md-1">
+
+      </div>
+      <div class="col-md-2">
 
       </div>
     </div>
@@ -60,13 +60,13 @@
       <div class="col-md-5">
 
       </div>
-      <div class="col-md-4">
-        Front-end Jr
-      </div>
-      <div class="col-md-2">
-
+      <div class="col-md-3">
+        <strong><em>Front-end Jr</em></strong>
       </div>
       <div class="col-md-1">
+
+      </div>
+      <div class="col-md-2">
 
       </div>
     </div>
@@ -76,14 +76,23 @@
   <div class="row">
     <div class="col-md-5">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-1">
       <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
         <mat-icon>facebook</mat-icon>
-    </button>
+      </button>
 
     </div>
-    <div class="col-md-5">
-
+    <div class="col-md-1">
+      <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+        <mat-icon>facebook</mat-icon>
+      </button>
+    </div>
+    <div class="col-md-1">
+      <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+        <mat-icon>facebook</mat-icon>
+      </button>
+    </div>
+    <div class="col-md-4">
     </div>
   </div>
 </div>
@@ -117,6 +126,22 @@
             Otras instrucciones: Por ejemplo, la detención del funcionamiento del computador a la espera de una acción del usuario.</p>
         </mat-card-content>
       </mat-card>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-2">
+
     </div>
   </div>
 </div>
@@ -166,5 +191,59 @@
         <div class="col-md-2">
 
         </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
 
+            </div>
+            <div #seccionEducation class="col-md-10">
+              <mat-card class="example-card">
+                <mat-card-title-group>
+                  <mat-card-title>Education</mat-card-title>
+                  <mat-card-subtitle>Secundaria</mat-card-subtitle>
+                </mat-card-title-group>
+                <mat-card-content>
+                  Tecnico Informatico a nivel Personal y Profesional
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-10">
+              <mat-card class="example-card">
+                <mat-card-title-group>
+                  <mat-card-title>Education</mat-card-title>
+                  <mat-card-subtitle>Universidad</mat-card-subtitle>
+                </mat-card-title-group>
+                <mat-card-content>
+                  Analista Programador Universitario
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-10">
+              <mat-card class="example-card">
+                <mat-card-title-group>
+                  <mat-card-title>Education</mat-card-title>
+                  <mat-card-subtitle>Cursos</mat-card-subtitle>
+                </mat-card-title-group>
+                <mat-card-content>
+                  Tecnico Reparador y Armador de Pc y Redes
+                  Programdor web
+                </mat-card-content>
+              </mat-card>
+            </div>
+          </div>
+        </div>
 <router-outlet></router-outlet>

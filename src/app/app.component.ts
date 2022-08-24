@@ -10,6 +10,7 @@ export class AppComponent {
   @ViewChild('seccionSkill') secFotosuno: ElementRef | any;
   @ViewChild('seccionAbout') secFotosdos: ElementRef | any;
   @ViewChild('seccionExperiencia') secFotostres: ElementRef | any;
+  @ViewChild('seccionEducation') secFotoscuatro: ElementRef | any;
   scrollDos() {
     this.secFotosuno.nativeElement.scrollIntoView({
         behavior: 'smooth',
@@ -26,6 +27,13 @@ export class AppComponent {
   }
   scrollTres() {
     this.secFotostres.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+    });
+  }
+  scrollCuatro() {
+    this.secFotoscuatro.nativeElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
         inline: 'nearest'
