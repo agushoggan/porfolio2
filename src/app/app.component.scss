@@ -1,18 +1,49 @@
 .fondo{
   background-image: url(https://i.pinimg.com/736x/ac/95/ff/ac95ffa91025ca875854caf5e179bf38.jpg);
 }
-.example-card {
-  max-width: 600px;
+.sombra{
+  background-color: transparent;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+  margin:auto;
+  width: 90%;
+  margin-top: 40px;
 }
 .example-card1 {
   border-radius: 20px;
+  margin-top: 50px;
 }
 #ima{
   border-radius: 800px;
-  width: 190px;
-  height: 170px;;
+  width: 200px;
+  height: 170px;
+  align-items: center;
+  margin-top: 50px;
 }
-mat-toolbar{
-  background-color: transparent;
-  position: fixed;
+
+#le{
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+
+#el{
+  margin-top: -25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.text-md-center{
+  font-weight: 600;
+  font-size: 2.0em;
+
+}
+.navbar-nav{
+  margin-left: auto;
+}
+.Misbotones{
+  margin-top: 30px;
+  margin:1%;
 }
