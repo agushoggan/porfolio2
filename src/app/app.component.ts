@@ -7,18 +7,19 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyecto_x';
-  @ViewChild('seccionSkill') secFotosuno: ElementRef | any;
-  @ViewChild('seccionAbout') secFotosdos: ElementRef | any;
-  @ViewChild('seccionExperiencia') secFotostres: ElementRef | any;
+  @ViewChild('seccionAbout') secFotosuno: ElementRef | any;
+  @ViewChild('seccionExperiencia') secFotosdos: ElementRef | any;
+  @ViewChild('seccionSkill') secFotostres: ElementRef | any;
   @ViewChild('seccionEducation') secFotoscuatro: ElementRef | any;
-  scrollDos() {
+  @ViewChild('seccionContacto') secFotoscinco: ElementRef | any;
+  scrollUno() {
     this.secFotosuno.nativeElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
         inline: 'nearest'
     });
   }
-  scrollUno() {
+  scrollDos() {
     this.secFotosdos.nativeElement.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
@@ -39,6 +40,13 @@ export class AppComponent {
         inline: 'nearest'
     });
   }
+  scrollCinco() {
+    this.secFotoscinco.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+    });
+  }
   Instagram(){
     window.open('https://www.instagram.com/ezequielbsso?r=nametag');
   }
@@ -52,3 +60,4 @@ export class AppComponent {
     window.open('https://twitter.com/ezee_bsso03');
   }
 }
+export class InputHintExample {}

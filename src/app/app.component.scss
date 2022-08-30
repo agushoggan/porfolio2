@@ -1,5 +1,8 @@
 .fondo{
   background-image: url(https://i.pinimg.com/736x/ac/95/ff/ac95ffa91025ca875854caf5e179bf38.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
 }
 .sombra{
   background-color: transparent;
@@ -12,6 +15,9 @@
 .example-card1 {
   border-radius: 20px;
   margin-top: 50px;
+  background-color: transparent;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px
 }
 #ima{
   border-radius: 800px;
@@ -46,4 +52,49 @@
 .Misbotones{
   margin-top: 30px;
   margin:1%;
+}
+.letra{
+  margin-top: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 1.714em;
+  line-height: 1.45em;
+}
+mat-card-subtitle{
+  color: black;
+}
+.exp{
+  margin-top: 50px;
+  background-color: transparent;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px
+}
+#tarjeta{
+  margin-top: 50px;
+  background-color: transparent;
+  color: rgb(236, 13, 13);
+  box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px
+}
+.Auto{
+  width: 180px;
+  height: 150px;
+}
+.fondo2{
+  background-image: url(https://fondosmil.com/fondo/13700.jpg);
+  background-repeat: no-repeat;
+  max-width: auto;
+}
+.card3{
+  margin-top: 80%;
+  background-color:aliceblue;
+  color: black;
+  margin:auto;
+  width: 90%;
+  margin-top: 40px;
+
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }

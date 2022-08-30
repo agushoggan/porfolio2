@@ -1,5 +1,5 @@
 <div class="fondo">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Barragán Ezequiel </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a> <button (click)="scrollUno()"class="1" mat-button color="basic">About me</button></a>
-          <a> <button (click)="scrollDos()" class="1" mat-button color="basic">Skill</button></a>
-          <a> <button (click)="scrollCuatro()" class="1" mat-button color="basic">Education</button> </a>
-          <a> <button (click)="scrollTres()"class="1" mat-button color="basic">Experience</button></a>
-          <a><button class="1" mat-button color="basic">Contact</button></a>
+          <a> <button (click)="scrollDos()" class="1" mat-button color="basic">Experience</button></a>
+          <a> <button (click)="scrollTres()" class="1" mat-button color="basic">Skill</button> </a>
+          <a> <button (click)="scrollCuatro()"class="1" mat-button color="basic">Education</button></a>
+          <a><button (click)="scrollCinco()"class="1" mat-button color="basic">Contact</button></a>
         </div>
       </div>
     </div>
@@ -69,7 +69,8 @@
       </div>
   </div>
 </div>
-<div #seccionAbout class="container-fluid">
+<div #seccionAbout></div>
+<div class="container-fluid">
   <mat-card class="sombra">
     <div class="row">
       <div class="col-md-4">
@@ -87,67 +88,74 @@
     </div>
   </mat-card>
 </div>
-<div class="container-fluid">
+<div #seccionExperiencia></div>
+<div  class="container-fluid">
+  <div class="row">
+    <div  class="col-md-12">
+      <div class=" letra text-center">Experiencia</div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-1">
 
     </div>
-    <div #seccionExperiencia class="col-md-10">
-      <mat-card  class="example-card1">
-        <mat-card-title> Experiencia</mat-card-title>
+    <div  class="col-md-10">
+      <mat-card class="example-card1">
+        <mat-card-title> Cajero y Fiambrero </mat-card-title>
+        <mat-card-subtitle>Desde Agosto a Febrero (2021-2022)</mat-card-subtitle>
         <mat-card-content>
-          <p>Las instrucciones de un lenguaje de programación se pueden clasificar en 4 grupos:
-
-            Instrucciones de transferencias de datos: Son aquellas de entrada o lectura y de salida o escritura. En el caso de las instrucciones de entrada o lectura, se lleva el dato de entrada o lectura desde la unidad de entrada a la memoria. Si por el contrario es una instrucción de salida o escritura, se lleva el dato de la memoria a la unidad de salida.
-            Instrucciones de tratamiento: Se trata de las instrucciones aritmético-lógicas y las de desplazamientos. Así como suma de datos o comparaciones.
-            Instrucciones de flujo de control o de bifurcación y salto: Las instrucciones de flujo de control son aquellas instrucciones que alteran el orden secuencial de la ejecución de un programa. También hay instrucciones que posibilitan la interrupción de la ejecución o saltar a ejecutar otro programa. Cuando termina cualquiera de estas instrucciones, el programa continúa ejecutándose desde el punto en el que se interrumpió.
-            Otras instrucciones: Por ejemplo, la detención del funcionamiento del computador a la espera de una acción del usuario.</p>
+          Atender caja y fiambreria en Almacen
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="container-fluid">
+    <div #seccionSkill></div>
+    <div class="container-text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class=" letra text-center">SKILL</div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-2">
 
         </div>
-        <div #seccionSkill class="col-md-4">
-          <mat-card class="example-card">
-            <mat-card-title> Skill</mat-card-title>
-            <mat-card-content>
-              <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
-              <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-              <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
-
-            </mat-card-content>
-          </mat-card>
-        </div>
         <div class="col-md-4">
-          <mat-card  class="example-card">
-            <mat-card-content>
-              <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-              <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-              <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-            </mat-card-content>
+          <mat-card class="exp">
+            <div class="row">
+              <div class="col-md-4">
+                <mat-progress-bar mode="determinate" value="50"> Angular</mat-progress-bar>
+                <mat-progress-bar mode="determinate" value="40">Boostrap</mat-progress-bar>
+              </div>
+              <div class="col-md-4">
+                <mat-progress-bar mode="determinate" value="30">SCSS</mat-progress-bar>
+                <mat-progress-bar mode="determinate" value="40">HTML</mat-progress-bar>
+              </div>
+            </div>
           </mat-card>
         </div>
-        <div class="col-md-2">
-
-        </div>
+        <div #seccionEducation></div>
         <div class="container-fluid">
+          <div  class="row">
+            <div class="col-md-12">
+              <div class=" letra text-center">Education</div>
+            </div>
+          </div>
           <div class="row">
             <div class="col-md-2">
 
             </div>
-            <div #seccionEducation class="col-md-10">
-              <mat-card class="example-card">
-                <mat-card-title-group>
-                  <mat-card-title>Education</mat-card-title>
-                  <mat-card-subtitle>Secundaria</mat-card-subtitle>
-                </mat-card-title-group>
-                <mat-card-content>
-                  Tecnico Informatico a nivel Personal y Profesional
-                </mat-card-content>
-              </mat-card>
+            <div class="card mb-3" style="max-width: 70%;">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid rounded-start Auto">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h3 class="card-title">Educacion Secundaria</h3>
+                    <p class="card-text">Tecnico Informatico a nivel Personal y Profesional</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -156,36 +164,61 @@
       <div class="col-md-2">
 
       </div>
-      <div class="col-md-10">
-        <mat-card class="example-card">
-          <mat-card-title-group>
-            <mat-card-title>Education</mat-card-title>
-            <mat-card-subtitle>Universidad</mat-card-subtitle>
-          </mat-card-title-group>
-          <mat-card-content>
-            Analista Programador Universitario
-          </mat-card-content>
-        </mat-card>
+      <div class="card mb-3" style="max-width: 70%;">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid rounded-start Auto">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Educacion Universidad</h3>
+              <p class="card-text">Analista Programador Universitario</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-text-center">
     <div class="row">
       <div class="col-md-2">
 
       </div>
-      <div class="col-md-10">
-        <mat-card class="example-card">
-          <mat-card-title-group>
-            <mat-card-title>Education</mat-card-title>
-            <mat-card-subtitle>Cursos</mat-card-subtitle>
-          </mat-card-title-group>
-          <mat-card-content>
-            Tecnico Reparador y Armador de Pc y Redes
-            <br>Programador web
-          </mat-card-content>
-        </mat-card>
+      <div class="card mb-3" style="max-width: 70%;">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid rounded-start Auto">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">Cursos</h3>
+              <p class="card-text">Tecnico Reparador y Armador de PC y Redes </p>
+              <p class="card-text">Programador Web</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="fondo2">
+    <div #seccionContacto></div>
+    <div class="container-fluid">
+      <mat-card class="card3">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-md-center">About ME</div>
+            El título de ingeniero/a habilita para trabajar en el ámbito de la tecnología, con responsabilidades sobre gestión, mantenimiento, desarrollo e innovación. Los y las ingenieros/as utilizan estos conocimientos para crear conceptos, materiales, procesos, productos, máquinas, obras y sistemas complejos.
+
+            En este sentido, los y las profesionales de la ingeniería se asumen como actores/actrices influyentes de nuestra sociedad, ya que están capacitados/as para dar respuesta a desafíos como el cambio climático global, la provisión de energía, las problemáticas de vivienda, transportes y comunicaciones, a partir del respeto por los recursos para las futuras generaciones.
+          </div>
+          <div class="col-md-4">
+            Cargo	Sueldo
+            Sueldos para Ingeniero Petrolero $ 268.132/mes
+            Sueldos para Ingeniero Petrolero 	$ 315.028/mes
+            Sueldos para Ingeniero Petrolero 	$ 303.394/mes
+          </div>
+        </div>
+      </mat-card>
     </div>
   </div>
 <router-outlet></router-outlet>
