@@ -60,4 +60,4 @@ export class AppComponent {
     window.open('https://twitter.com/ezee_bsso03');
   }
 }
-export class InputHintExample {}
+

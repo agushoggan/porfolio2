@@ -19,7 +19,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12 text-center">
-        <img id="ima"src="https://www.magisnet.com/wp-content/uploads/2021/01/programacio%CC%81n.jpg">
+        <img id="ima"src="../assets/IMG_20210101_015847_867.jpg">
       </div>
     </div>
       <div class="row">
@@ -74,16 +74,18 @@
   <mat-card class="sombra">
     <div class="row">
       <div class="col-md-4">
-        <div class="text-md-center">About ME</div>
+        <div class="text-md-center ">About ME</div>
+        <p></p>
         El título de ingeniero/a habilita para trabajar en el ámbito de la tecnología, con responsabilidades sobre gestión, mantenimiento, desarrollo e innovación. Los y las ingenieros/as utilizan estos conocimientos para crear conceptos, materiales, procesos, productos, máquinas, obras y sistemas complejos.
 
         En este sentido, los y las profesionales de la ingeniería se asumen como actores/actrices influyentes de nuestra sociedad, ya que están capacitados/as para dar respuesta a desafíos como el cambio climático global, la provisión de energía, las problemáticas de vivienda, transportes y comunicaciones, a partir del respeto por los recursos para las futuras generaciones.
       </div>
+      <div class="col-md-2"></div>
       <div class="col-md-4">
-        Cargo	Sueldo
-        Sueldos para Ingeniero Petrolero $ 268.132/mes
-        Sueldos para Ingeniero Petrolero 	$ 315.028/mes
-        Sueldos para Ingeniero Petrolero 	$ 303.394/mes
+       <p class="fw-bold">Basic Information:<span class="fw-normal"> Barragan Ezequiel</span></p>
+       <p class="fw-bold">Date of Birth: <span class="fw-normal"> 03/09/01</span></p>
+       <p class="fw-bold">Email: <span class="fw-normal"> ezebsso.03@gmail.com</span></p>
+       <p class="fw-bold">Pais: <span class="fw-normal"> Argentina</span></p>
       </div>
     </div>
   </mat-card>
@@ -115,20 +117,23 @@
           <div class=" letra text-center">SKILL</div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-2">
-
-        </div>
-        <div class="col-md-4">
+    </div>
+      <div class="container-fluid">
+        <div class="col-md-">
           <mat-card class="exp">
             <div class="row">
-              <div class="col-md-4">
-                <mat-progress-bar mode="determinate" value="50"> Angular</mat-progress-bar>
-                <mat-progress-bar mode="determinate" value="40">Boostrap</mat-progress-bar>
+              <div class="col-md-5">
+                <h3>Angular</h3>
+                <mat-progress-bar mode="determinate" value="50"></mat-progress-bar><br>
+                <h3>Boostrap</h3>
+                <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
               </div>
-              <div class="col-md-4">
-                <mat-progress-bar mode="determinate" value="30">SCSS</mat-progress-bar>
-                <mat-progress-bar mode="determinate" value="40">HTML</mat-progress-bar>
+              <div class="col-md-2"></div>
+              <div class="col-md-5">
+                <h3>CSS/SCSS</h3>
+                <mat-progress-bar mode="determinate" value="30"></mat-progress-bar><br>
+                <h3>Html</h3>
+                <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
               </div>
             </div>
           </mat-card>
@@ -159,6 +164,7 @@
             </div>
           </div>
         </div>
+      </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-2">
@@ -200,24 +206,35 @@
       </div>
     </div>
   </div>
-  <div class="fondo2">
-    <div #seccionContacto></div>
+  <div #seccionContacto class="fondo2">
     <div class="container-fluid">
       <mat-card class="card3">
         <div class="row">
-          <div class="col-md-4">
-            <div class="text-md-center">About ME</div>
-            El título de ingeniero/a habilita para trabajar en el ámbito de la tecnología, con responsabilidades sobre gestión, mantenimiento, desarrollo e innovación. Los y las ingenieros/as utilizan estos conocimientos para crear conceptos, materiales, procesos, productos, máquinas, obras y sistemas complejos.
-
-            En este sentido, los y las profesionales de la ingeniería se asumen como actores/actrices influyentes de nuestra sociedad, ya que están capacitados/as para dar respuesta a desafíos como el cambio climático global, la provisión de energía, las problemáticas de vivienda, transportes y comunicaciones, a partir del respeto por los recursos para las futuras generaciones.
-          </div>
-          <div class="col-md-4">
-            Cargo	Sueldo
-            Sueldos para Ingeniero Petrolero $ 268.132/mes
-            Sueldos para Ingeniero Petrolero 	$ 315.028/mes
-            Sueldos para Ingeniero Petrolero 	$ 303.394/mes
+          <div class="col-md-12">
+            <div class="text-md-center">Contact</div>
           </div>
         </div>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <form class="example-form">
+
+                <mat-form-field id="form"appearance="fill">
+                  <mat-label class="name">NAME</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                  <mat-form-field id="form"class="example-full-width" appearance="fill">
+                    <mat-label class="email">Email</mat-label>
+                    <input matInput type="email"placeholder="pat@example.com">
+                  </mat-form-field>
+              </form>
+            </div>
+            <div class="col-md-6">
+             Cargo	Sueldo
+              Sueldos para Ingeniero Petrolero $ 268.132/mes
+             Sueldos para Ingeniero Petrolero 	$ 315.028/mes
+              Sueldos para Ingeniero Petrolero 	$ 303.394/mes
+            </div>
+          </div>
       </mat-card>
     </div>
   </div>
