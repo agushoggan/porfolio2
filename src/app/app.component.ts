@@ -1,10 +1,12 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-
+import { Component, ElementRef, ViewChild,OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent {
   title = 'proyecto_x';
   @ViewChild('seccionAbout') secFotosuno: ElementRef | any;
@@ -48,16 +50,17 @@ export class AppComponent {
     });
   }
   Instagram(){
-    window.open('https://www.instagram.com/ezequielbsso?r=nametag');
+    window.open('https://www.instagram.com/agusshoggan/');
   }
   Github(){
-    window.open('https://github.com/');
+    window.open('https://github.com/agushoggan');
   }
   Linkedin(){
-    window.open('https://www.linkedin.com/in/ezequiel-barragan-8463a51a6/');
+    window.open('https://www.linkedin.com/in/agustin-hoggan-962564228/');
   }
   Twitter(){
-    window.open('https://twitter.com/ezee_bsso03');
+    window.open('https://twitter.com/AgustiinHoggan');
   }
 }
+
 
